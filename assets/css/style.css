@@ -6,14 +6,15 @@ header {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: deepskyblue;
+    background: rgb(23,23,23);
+background: linear-gradient(333deg, rgba(23,23,23,1) 0%, rgba(0,159,255,1) 30%, rgba(255,255,255,1) 93%);
     padding: 50px 0;
     border-bottom: 15px solid dodgerblue;
 }
 
 header h1 {
     margin: 0;
-    background-color: deepskyblue;
+    background-color: none;
     font-size: 96px;
     padding-left: 10%;  
     font-family: 'Alegreya Sans SC';
@@ -59,8 +60,9 @@ main section h2 {
 main section p {
     font-size: 24px;
 }
-main div {
-    background-color: deepskyblue;
+.contact-me {
+    background: rgb(23,23,23);
+    background: linear-gradient(333deg, rgba(23,23,23,1) 0%, rgba(0,159,255,1) 30%, rgba(255,255,255,1) 93%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,4 +84,22 @@ main div a {
     text-decoration: none;
     color: black;
     padding-bottom:40px;
+}
+
+.split {
+    display: flex;
+}
+
+.work {
+    margin: 0 20px 50px 50px;
+    width: 225%;
+}
+
+.resume {
+    margin: 0 50px 50px 20px;
+}
+
+.margin {
+    width: 550px;
+    margin: 40px; 
 }
