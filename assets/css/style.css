@@ -38,7 +38,7 @@ header ul li {
     border-radius: 25px;
 }
 
-main section {
+main .section {
     border: 10px solid lightsteelblue;
     margin: 50px;
     border-radius: 25px;
@@ -47,17 +47,17 @@ main section {
     box-shadow: 5px 5px 25px black;
 }
 
-main section img {
+.border {
     border: 5px solid darkslategrey;
     border-radius: 25px;
     margin: 0 40px;
 }
 
-main section h2 {
+main .section h2 {
     font-size: 32px;
 }
 
-main section p {
+main .section p {
     font-size: 24px;
 }
 .contact-me {
@@ -102,4 +102,26 @@ main div a {
 .margin {
     width: 550px;
     margin: 40px; 
+}
+
+.projects {
+    width: 500px;
+    height: 200px;
+}
+
+.flex img {
+    border-radius: 200px;
+    padding: 20px;
+}
+
+.first-project img {
+    border-radius: 125px;
+}
+
+.flex {
+    padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
