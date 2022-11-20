@@ -38,6 +38,29 @@ header ul li {
     border-radius: 25px;
 }
 
+header ul li:hover {
+    background-color: mediumpurple;
+    border: 2px solid lightyellow;
+}
+header ul li a:hover {
+    color: lightblue;
+}
+
+header ul li a:active{
+    color: mediumpurple;
+}
+
+header ul li:active {
+    background-color: lightyellow;
+    border: 2px solid yellow;
+    color: mediumpurple;
+}
+
+header ul li a {
+    text-decoration: none; 
+    color: black; 
+}
+
 main .section {
     border: 10px solid lightsteelblue;
     margin: 50px;
