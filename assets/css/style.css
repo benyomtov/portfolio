@@ -1,7 +1,10 @@
+/* gets rid of margin and makes background white*/
 body {
     margin: 0;
     background-color: ghostwhite;
 }
+/*formatting for header*/
+/*header is flexbox, gradient background, padding on top and bottom, blue border on bottom*/
 header {
     display:flex;
     flex-direction: row;
@@ -11,11 +14,11 @@ background: linear-gradient(333deg, rgba(23,23,23,1) 0%, rgba(0,159,255,1) 30%, 
     padding: 50px 0;
     border-bottom: 15px solid dodgerblue;
 }
-
+/*formatting for title*/
 header h1 {
     margin: 0;
     background-color: none;
-    font-size: 96px;
+    font-size: 72px;
     padding-left: 10%;  
     font-family: 'Alegreya Sans SC';
 }
@@ -23,7 +26,7 @@ header h1 {
 ul {
     padding-right: 5%;
 }
-
+/* formatting for nav buttons*/
 header ul li {
     position: relative;
     right: 10px;
@@ -37,7 +40,7 @@ header ul li {
     border: 2px solid green;
     border-radius: 25px;
 }
-
+/* formatting changes when user interacts with nav buttons*/
 header ul li:hover {
     background-color: mediumpurple;
     border: 2px solid lightyellow;
@@ -55,12 +58,12 @@ header ul li:active {
     border: 2px solid yellow;
     color: mediumpurple;
 }
-
+/*changes link color to black and removes underline*/
 header ul li a {
     text-decoration: none; 
     color: black; 
 }
-
+/* formatting for each main section except contact me*/
 main .section {
     border: 10px solid lightsteelblue;
     margin: 50px;
@@ -69,20 +72,21 @@ main .section {
     font-family: 'Nova Flat';
     box-shadow: 5px 5px 25px black;
 }
-
+/*puts borders on pictures in body sections and creates margin on sides*/
 .border {
     border: 5px solid darkslategrey;
     border-radius: 25px;
     margin: 0 40px;
 }
-
+/*sizes titles of each body section*/
 .about-me {
     font-size: 32px;
 }
-
+/* sizes paragraph text in about me*/
 main .section p {
     font-size: 24px;
 }
+/*formatting for contact me section*/
 .contact-me {
     background: rgb(23,23,23);
     background: linear-gradient(333deg, rgba(23,23,23,1) 0%, rgba(0,159,255,1) 30%, rgba(255,255,255,1) 93%);
@@ -94,13 +98,13 @@ main .section p {
     text-shadow: 2px 3px 3px mediumpurple;
     border-top: 15px solid dodgerblue;
 }
-
+/*positions contact me title*/
 main div h2 {
     display: inline;
     padding-right: 30px;
     padding-bottom:40px;
 }
-
+/*formatting for links*/
 main div a {
     display: inline;
     padding-right: 15px;
@@ -108,49 +112,44 @@ main div a {
     color: black;
     padding-bottom:40px;
 }
-
+/*flex container for work and resume sections*/
 .split {
     display: flex;
 }
-
+/*formatting for work section*/
 .work {
     margin: 0 20px 50px 50px;
     width: 225%;
     padding-top: 30px;
 }
-
+/*formatting for resume section*/
 .resume {
     margin: 0 50px 50px 20px;
     padding-top: 30px;
 }
-
+/*sizing of resume*/
 .margin {
     width: 550px;
     margin: 40px; 
 }
-
-.projects {
-    width: 500px;
-    height: 200px;
-}
-
+/*formatting for project images*/
 .flex img {
     width: 40%;
     height: auto;
     border-radius: 200px;
     margin: 20px;
 }
-
+/*shadow appears when projects hovered over*/
 .flex img:hover {
     box-shadow: 0px 0px 20px slategrey;
 }
-
+/*special formatting for first project image*/
 .first-project img {
-    width: 80%;
+    width: 85%;
     height: auto;
     border-radius: 125px;
 }
-
+/*flex container for project pictures*/
 .flex {
     padding-top: 35px;
     display: flex;
@@ -159,7 +158,7 @@ main div a {
     justify-content: center;
     flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
 }
-
+/*the rest of the code makes the site responsive at different widths*/
 @media screen and (max-width:992px) {
     .split {
         flex-direction: column;
@@ -227,6 +226,9 @@ main div a {
     padding: 0 10px;
     margin: 0 0px;  
     }
+    .flex img {
+        width: 30%;
+    }
 }
 @media screen and (max-width:400px) {
     .border {
@@ -243,5 +245,12 @@ main div a {
     }
     .flex {
         width: 100%;
+    }
+    .flex img {
+        width:40%;
+    }
+    .first-project img {
+        width: 80%;
+        height: auto;
     }
 }
