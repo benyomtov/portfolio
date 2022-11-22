@@ -29,6 +29,6 @@ Fonts were sourced from https://webdesigndev.com/16-gorgeous-web-safe-fonts-to-u
 Pictures used as placeholders for project links were sourced from https://www.freewebheaders.com/headers-size-800x200/.
 
 ## License
-
 No license.
+
 ---
