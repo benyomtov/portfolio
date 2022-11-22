@@ -227,4 +227,21 @@ main div a {
     padding: 0 10px;
     margin: 0 0px;  
     }
-}    
+}
+@media screen and (max-width:400px) {
+    .border {
+        width: 70%;
+    }
+    header ul li {
+        margin: 0 32%;
+    }
+    main .section {
+        margin: 25px 34px;
+    }
+    main div h2 {
+        width: 100%;
+    }
+    .flex {
+        width: 100%;
+    }
+}
