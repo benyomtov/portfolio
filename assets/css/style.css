@@ -134,11 +134,12 @@ main div a {
 }
 /*formatting for project images*/
 .flex img {
-    width: 40%;
     height: auto;
     border-radius: 200px;
     margin: 20px;
 }
+
+
 /*shadow appears when projects hovered over*/
 .flex img:hover {
     box-shadow: 0px 0px 20px slategrey;
